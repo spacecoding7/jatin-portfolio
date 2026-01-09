@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        /* HEADING */
+        h1 {
+            text-align: center;
+            font-size: 48px;
+            margin-bottom: 60px;
+        }
+
+        h1 span {
+            color: aqua;
+        }
+
+        .about-head:hover h1 {
+            text-decoration: underline;
+            text-decoration-color: aqua;
+        }
+
+        /* ABOUT SECTION */
+        .about {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        /* IMAGE */
+        .about-left img {
+            width: 420px;
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(255, 255, 255, 0.15);
+            animation: slideLeft 1.2s ease;
+        }
+
+        /* TEXT */
+        .about-right {
+            max-width: 520px;
+            font-size: 18px;
+            line-height: 1.7;
+            animation: slideRight 1.2s ease;
+        }
+
+        .about-right h2 {
+            margin-bottom: 15px;
+            color: aqua;
+        }
+
+        .about-right button {
+            margin-top: 20px;
+            padding: 14px 28px;
+            background-color: aqua;
+            border-radius: 25px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .about-right button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 255, 255, 0.5);
+        }
+
+        /* ANIMATIONS */
+        @keyframes slideLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .about {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-right {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="about-head">
+        <h1>ABOUT <span>ME</span></h1>
+    </div>
+
+    <section class="about">
+        <div class="about-left">
+            <img src="anime.jfif" alt="About Image">
+        </div>
+
+        <div class="about-right">
+            <h2>Who I Am</h2>
+            <p>
+                I am a passionate web developer who loves building modern, responsive,
+                and user-friendly websites. I enjoy turning ideas into real-world web
+                applications using HTML, CSS, and JavaScript.
+                <br><br>
+                I continuously learn new technologies and focus on writing clean,
+                efficient code while delivering visually appealing designs.
+            </p>
+            <button>Learn More</button>
+        </div>
+    </section>
+
+</body>
+</html>

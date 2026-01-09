@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 48px;
+            margin: 50px 0;
+        }
+
+        h1 span {
+            color: aqua;
+        }
+
+        /* PROJECT SECTION */
+        .pro-sec {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            padding: 40px 80px;
+        }
+
+        .gallery {
+            background-color: #020617;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+            overflow: hidden;
+            animation: appear 1.2s ease-in-out;
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .gallery-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery:hover img {
+            transform: scale(1.1);
+        }
+
+        .img-desc {
+            padding: 15px;
+            text-align: center;
+            background-color: white;
+            color: black;
+            font-weight: 600;
+        }
+
+        /* ANIMATION */
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #0e0e1a;
+            margin-top: 80px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            padding: 40px 20px;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer h3 {
+            margin-bottom: 15px;
+        }
+
+        .footer ul li {
+            margin-bottom: 8px;
+            color: #cbd5f5;
+            cursor: pointer;
+        }
+
+        .footer ul li:hover {
+            color: aqua;
+        }
+
+        .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 15px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>MY <span>PROJECTS</span></h1>
+
+    <section class="pro-sec">
+        <div class="gallery"><div class="gallery-img"><img src="image1111.jpg"></div><div class="img-desc">Website</div></div>
+        <div class="gallery"><div class="gallery-img"><img src="image1111.jpg"></div><div class="img-desc">C Language</div></div>
+        <div class="gallery"><div class="gallery-img"><img src="image1111.jpg"></div><div class="img-desc">C++ Language</div></div>
+        <div class="gallery"><div class="gallery-img"><img src="image1111.jpg"></div><div class="img-desc">PHP Project</div></div>
+        <div class="gallery"><div class="gallery-img"><img src="image1111.jpg"></div><div class="img-desc">DBMS</div></div>
+        <div class="gallery"><div class="gallery-img"><img src="image1111.jpg"></div><div class="img-desc">Operating System</div></div>
+        <div class="gallery"><div class="gallery-img"><img src="image1111.jpg"></div><div class="img-desc">Python Project</div></div>
+        <div class="gallery"><div class="gallery-img"><img src="image1111.jpg"></div><div class="img-desc">Basic Computer</div></div>
+        <div class="gallery"><div class="gallery-img"><img src="image1111.jpg"></div><div class="img-desc">IoT</div></div>
+        <div class="gallery"><div class="gallery-img"><img src="image1111.jpg"></div><div class="img-desc">Java</div></div>
+        <div class="gallery"><div class="gallery-img"><img src="image1111.jpg"></div><div class="img-desc">Excel Project</div></div>
+        <div class="gallery"><div class="gallery-img"><img src="image1111.jpg"></div><div class="img-desc">Data Science (Python)</div></div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div>
+                <h3>Jatin's Web Developer Portfolio</h3>
+            </div>
+            <div>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Projects</li>
+                    <li>Skills</li>
+                    <li>Experience</li>
+                    <li>Hire Me</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            © 2026 jatinsportfolio.com | All rights reserved
+        </div>
+    </footer>
+
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 48px;
+            margin: 50px 0;
+        }
+
+        h1 span {
+            color: aqua;
+        }
+
+        /* PROJECT SECTION */
+        .pro-sec {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            padding: 40px 80px;
+        }
+
+        .gallery {
+            background-color: #020617;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+            overflow: hidden;
+            cursor: pointer;
+            animation: appear 1s ease;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery:hover {
+            transform: translateY(-8px);
+        }
+
+        .gallery-img {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .gallery-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery:hover img {
+            transform: scale(1.1);
+        }
+
+        .img-desc {
+            padding: 15px;
+            text-align: center;
+            background-color: white;
+            color: black;
+            font-weight: 600;
+        }
+
+        /* ANIMATION */
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* MODAL */
+        .modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal-content {
+            background: #020617;
+            padding: 30px;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 420px;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
+            position: relative;
+        }
+
+        .modal-content h2 {
+            color: aqua;
+            margin-bottom: 15px;
+        }
+
+        .modal-content p {
+            color: #cbd5f5;
+            margin-bottom: 10px;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 18px;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #0e0e1a;
+            margin-top: 80px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            padding: 40px 20px;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer ul li {
+            margin-bottom: 8px;
+            color: #cbd5f5;
+            cursor: pointer;
+        }
+
+        .footer ul li:hover {
+            color: aqua;
+        }
+
+        .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 15px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>MY <span>PROJECTS</span></h1>
+
+    <section class="pro-sec">
+        <div class="gallery" onclick="openModal('Website Project','Responsive portfolio website showcasing my skills and services.','HTML, CSS, JavaScript')">
+            <div class="gallery-img"><img src="image1111.jpg"></div>
+            <div class="img-desc">Website</div>
+        </div>
+
+        <div class="gallery" onclick="openModal('C Language Project','Console-based programs demonstrating logic and problem-solving skills.','C')">
+            <div class="gallery-img"><img src="image1111.jpg"></div>
+            <div class="img-desc">C Language</div>
+        </div>
+
+        <div class="gallery" onclick="openModal('C++ Project','Object-oriented programs built using C++ concepts.','C++')">
+            <div class="gallery-img"><img src="image1111.jpg"></div>
+            <div class="img-desc">C++ Language</div>
+        </div>
+
+        <div class="gallery" onclick="openModal('PHP Project','Dynamic website with backend logic and database integration.','PHP, MySQL')">
+            <div class="gallery-img"><img src="image1111.jpg"></div>
+            <div class="img-desc">PHP Project</div>
+        </div>
+
+        <div class="gallery" onclick="openModal('Python Project','Python-based project focusing on automation and scripting.','Python')">
+            <div class="gallery-img"><img src="image1111.jpg"></div>
+            <div class="img-desc">Python Project</div>
+        </div>
+
+        <div class="gallery" onclick="openModal('Java Project','Core Java programs demonstrating OOP concepts.','Java')">
+            <div class="gallery-img"><img src="image1111.jpg"></div>
+            <div class="img-desc">Java</div>
+        </div>
+    </section>
+
+    
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDesc"></p>
+            <p><strong>Technologies:</strong> <span id="modalTech"></span></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div>
+                <h3>Aman's Developer Portfolio</h3>
+            </div>
+            <div>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            © 2026 amansportfolio.com | All rights reserved
+        </div>
+    </footer>
+
+    <script>
+        function openModal(title, desc, tech) {
+            document.getElementById("modalTitle").innerText = title;
+            document.getElementById("modalDesc").innerText = desc;
+            document.getElementById("modalTech").innerText = tech;
+            document.getElementById("projectModal").style.display = "flex";
+        }
+
+        function closeModal() {
+            document.getElementById("projectModal").style.display = "none";
+        }
+
+        window.onclick = function (e) {
+            const modal = document.getElementById("projectModal");
+            if (e.target === modal) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
+
+</body>
+</html> -->

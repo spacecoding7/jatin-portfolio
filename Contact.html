@@ -1,0 +1,320 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0f172a, #020617);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* FORM CONTAINER */
+        .form-container {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(8px);
+            padding: 40px;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .form-container h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: aqua;
+        }
+
+        .form-container hr {
+            border: 1px solid aqua;
+            margin-bottom: 25px;
+        }
+
+        /* INPUTS */
+        .input-group {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            font-size: 14px;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: 2px solid aqua;
+            background-color: #f8fafc;
+        }
+
+        textarea {
+            resize: none;
+            height: 120px;
+        }
+
+        /* BUTTONS */
+        .btn-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 12px 30px;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+            transition: 0.3s ease;
+        }
+
+        .btn-submit {
+            background-color: aqua;
+            color: #020617;
+        }
+
+        .btn-submit:hover {
+            background-color: #22d3ee;
+        }
+
+        .btn-reset {
+            background-color: #334155;
+            color: white;
+        }
+
+        .btn-reset:hover {
+            background-color: #475569;
+        }
+
+        @media (max-width: 500px) {
+            .input-group {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h1>CONTACT ME</h1>
+        <hr>
+
+        <form>
+            <div class="input-group">
+                <input type="text" placeholder="Full Name" required>
+                <input type="tel" placeholder="Phone" required>
+            </div>
+
+            <div class="input-group">
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Address">
+            </div>
+
+            <textarea placeholder="Your Message"></textarea>
+
+            <div class="btn-group">
+                <button type="submit" class="btn-submit">Submit</button>
+                <button type="reset" class="btn-reset">Clear</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0f172a, #020617);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* PAGE LOAD ANIMATION */
+        @keyframes fadeSlide {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* FORM CONTAINER */
+        .form-container {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(8px);
+            padding: 40px;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+            animation: fadeSlide 1.2s ease forwards;
+        }
+
+        .form-container h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: aqua;
+        }
+
+        .form-container hr {
+            border: 1px solid aqua;
+            margin-bottom: 25px;
+        }
+
+        /* INPUT GROUP */
+        .input-group {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        /* INPUTS */
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            font-size: 14px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        input:focus,
+        textarea:focus {
+            transform: scale(1.03);
+            box-shadow: 0 0 12px aqua;
+            background-color: #f8fafc;
+        }
+
+        textarea {
+            resize: none;
+            height: 120px;
+        }
+
+        /* BUTTONS */
+        .btn-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 12px 30px;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn-submit {
+            background-color: aqua;
+            color: #020617;
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 255, 255, 0.6);
+        }
+
+        .btn-reset {
+            background-color: #334155;
+            color: white;
+        }
+
+        .btn-reset:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(148, 163, 184, 0.5);
+        }
+
+        /* FLOATING EFFECT */
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-6px); }
+            100% { transform: translateY(0); }
+        }
+
+        .form-container {
+            animation: fadeSlide 1.2s ease forwards, float 6s ease-in-out infinite;
+        }
+
+        @media (max-width: 500px) {
+            .input-group {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h1>CONTACT ME</h1>
+        <hr>
+
+        <form>
+            <div class="input-group">
+                <input type="text" placeholder="Full Name" required>
+                <input type="tel" placeholder="Phone" required>
+            </div>
+
+            <div class="input-group">
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Address">
+            </div>
+
+            <textarea placeholder="Your Message"></textarea>
+
+            <div class="btn-group">
+                <button type="submit" class="btn-submit">Submit</button>
+                <button type="reset" class="btn-reset">Clear</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
+
